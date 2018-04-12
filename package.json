@@ -1,0 +1,11 @@
+{
+  "name": "mountebank-util",
+  "version": "1.0.0",
+  "description": "mountebank util library based on mountebank-helper",
+  "main": "mountebank-util.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Conan Shin",
+  "license": "ISC"
+}
