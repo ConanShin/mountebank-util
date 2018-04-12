@@ -1,6 +1,6 @@
 {
   "name": "mountebank-util",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "mountebank util library based on mountebank-helper",
   "main": "mountebank-util.js",
   "scripts": {

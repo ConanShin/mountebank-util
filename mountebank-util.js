@@ -1,4 +1,5 @@
 var mbHelper = require("mountebank-helper");
+
 class Stub {
     constructor(port = 9000) {
         this.imposter = new mbHelper.Imposter({'imposterPort': port, 'mountebankPort':2525});
@@ -15,7 +16,7 @@ class Stub {
     }
     addResponse(uri, method, content, statusCode) {
         const contentResponse = {
-            'uri': '/api' + uri,
+            'uri': uri,
             'verb': method,
             'res': {
                 'statusCode': statusCode || 200,
@@ -33,11 +34,11 @@ class Stub {
         const newBody = JSON.stringify(newResponseBody)
         this.imposter.updateResponseBody(newBody, pathToUpdate)
     }
-    createImposter = async() => {
+    async createImposter () {
         await this.imposter.postToMountebank()
         console.log('Imposter Posted!')
     }
-    deleteImposter = async() => {
+    async deleteImposter () {
         await this.imposter._deleteOldImposter()
         console.log('Imposter Deleted!')
     }
