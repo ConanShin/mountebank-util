@@ -22,8 +22,8 @@ npm install --save mountebank-util
 
 How to Use
 ```js
-var mountebank = require('mountebank-util')
-var stubServer = new mountebank()
+var Mountebank = require('mountebank-util')
+var stubServer = new Mountebank('port-number')
 
 //To stub api /hello
 stubServer.addResponse('/hello', 'GET', 'return value')
