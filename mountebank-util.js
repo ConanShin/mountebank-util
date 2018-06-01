@@ -8,7 +8,7 @@ class Stub {
             'verb': 'OPTIONS',
             'res': {
                 'statusCode': 200,
-                'responseHeaders': {'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Token, Content-Type', 'Access-Control-Allow-Methods': 'PUT, GET'},
+                'responseHeaders': {'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Allow-Methods': '*'},
                 'responseBody': ''
             }
         }
